@@ -15,7 +15,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Aplikasi Mahasiswa",
       home: const MyHome(),
-      theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.pinkAccent)),
+      // theme: ThemeData(colorScheme: ColorScheme.fromSeed(seedColor: Colors.pinkAccent)),
+      theme: ThemeData(useMaterial3: true ),
+      darkTheme: ThemeData.dark(),
     );
   }
 }
@@ -27,8 +29,8 @@ class MyHome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("Dashboard Mahasiswa"),),
-      body: const Center(child: Text("Selamat"),),
-      backgroundColor: Colors.purpleAccent,
+      body: const Center(child: Text("Alfan Fadillah Ramadhan"),),
+      backgroundColor: const Color.fromARGB(255, 94, 6, 24),
     );
   }
 }
