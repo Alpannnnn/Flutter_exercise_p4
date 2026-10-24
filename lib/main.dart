@@ -19,3 +19,17 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+class MyHome extends StatelessWidget {
+  const MyHome({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text("Dashboard Mahasiswa"),),
+      body: const Center(child: Text("Selamat"),),
+      backgroundColor: Colors.purpleAccent,
+    );
+  }
+}
+
